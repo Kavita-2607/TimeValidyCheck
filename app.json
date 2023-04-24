@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "timer",
-    "slug": "timer",
+    "slug": "timerBeta",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,16 +18,31 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ttl.MyAppTimer"
     },
     "android": {
+      "package": "com.ttl.MyAppTimer",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "permissions": [
+        "NOTIFICATIONS",
+        "ACCESS_MEDIA_LOCATION",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "64e77251-431c-4a39-82f0-43b42ff1b995"
+      }
     }
   }
 }

@@ -2,12 +2,12 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import CountDown from 'react-native-countdown-component';
 
-function timer(){
+function Input(){
   return(
     <View>
       <Text style = {{ justifyContent:'center', alignContent:'center',
-       alignItems:'center', color:'red', fontSize: 40, paddingTop : 50}}>
-        React Native Timer Test Time by : Kavita Singh 
+       alignItems:'center', color:'red', fontSize: 500, paddingTop : 60}}>
+        Application to Test Time Left
       </Text>
     <CountDown
     until={60 * 20 + 30}
@@ -22,4 +22,4 @@ function timer(){
 
   );
 }
-export default timer;
+export default Input;
